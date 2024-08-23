@@ -1,7 +1,10 @@
 {
-  "name": "final-test-tokens",
-  "version": "0.1.0",
+  "name": "@chakri-git-hub/final-test-tokens",
+  "version": "0.1.1",
   "private": true,
+  "repository" :{
+    "url" : "https://github.com/chakri-git-hub/final-test-tokens.git"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
