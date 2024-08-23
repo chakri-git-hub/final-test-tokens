@@ -1,0 +1,57 @@
+$font-host: 'https://cdn.hcltechsw.com/public/';
+$font-family_inter: 'Inter';
+$font-family_hclRoobert: 'HCL Roobert';
+$font-family_robotoMono: 'Roboto Mono';
+
+// @mixin baseFontFace($fontFamily, $url1: null, $url2: null, $weight: null) {
+//   font-family: $fontFamily;
+//   @if ($url1) {
+//     src: url($font-host + $url1);
+//   }
+//   @if ($weight) {
+//     font-weight: $weight;
+//   }
+// }
+
+@mixin baseFontFace($fontFamily, $url1: null, $url2: null, $weight: null) {
+  font-family: $fontFamily;
+  @if ($url1) {
+    src: url($font-host + $url1);
+  }
+
+  @if ($fontFamily == $font-family_robotoMono) {
+    src: url($url1);
+  }
+
+  @if ($weight) {
+    font-weight: $weight;
+  }
+}
+
+@font-face {
+  @include baseFontFace($font-family_inter, 'Inter-Regular.woff2', 400);
+}
+
+@font-face {
+  @include baseFontFace(
+    $font-family_hclRoobert,
+    'HCLTechRoobert-Regular.woff2',
+    400
+  );
+}
+
+@font-face {
+  @include baseFontFace(
+    $font-family_robotoMono,
+    'https://fonts.googleapis.com/css?family=Roboto+Mono',
+    400
+  );
+}
+
+// @font-face {
+//   font-family: 'Roboto Mono';
+//   font-style: normal;
+//   font-weight: 400;
+//   src: url('https://fonts.googleapis.com/css?family=Roboto+Mono')
+//     format('woff2');
+// }

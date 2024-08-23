@@ -1,0 +1,128 @@
+// Colour tokens light mode
+
+.light-mode,
+:root {
+  //   Main
+  --main_default: #f2f2f2;
+  --main_hover: #e6e6e6;
+  --main_pressed: #dedede;
+  --main_high: #ffffff;
+  --main_xcontrast: #ffffff;
+
+  // Secondary
+  --secondary_default: #262626;
+  --secondary_high: #121212;
+  --secondary_xhigh: #000000;
+
+  // Borders
+  --borders_low: #737373;
+  --borders_high: #474747;
+  --borders_decorative: #dedede;
+  --borders_contrast: #ffffff;
+
+  // Primary
+  --primary_default: #007a87;
+  --primary_hover: #006075;
+  --primary_pressed: #0b455f;
+
+  // Neutral
+  --neutral_default: #474747;
+  --neutral_hover: #262626;
+  --neutral_pressed: #000000;
+
+  // Info
+  --info_bg: #e8f4ff;
+  --info_default: #0550dc;
+  --info_hover: #043ace;
+  --info_pressed: #0029a9;
+
+  // Danger
+  --danger_bg: #fff2f2;
+  --danger_default: #c10c0d;
+  --danger_hover: #a00c0c;
+  --danger_pressed: #730c0c;
+
+  // Warning
+  --warning_bg: #fffeed;
+  --warning_default: #ffdf41;
+  --warning_hover: #ffc919;
+  --warning_pressed: #eea600;
+  --warning_label: #262626;
+  --warning_border: #737373;
+
+  // Success
+  --success_bg: #e4fded;
+  --success_default: #007744;
+  --success_hover: #04633d;
+  --success_pressed: #054d33;
+
+  // Disabled
+  --disabled_bg: #dedede;
+  --disabled_content: #adadad;
+  --disabled_ghost: #c6c6c6;
+  --disabled_overlay: #000000 - 75%;
+}
+
+// Colour tokens dark mode
+
+.dark-mode {
+  //   Main
+  --main_default: #121212;
+  --main_hover: #262626;
+  --main_pressed: #363636;
+  --main_high: #000000;
+  --main_xcontrast: #121212;
+
+  // Secondary
+  --secondary_default: #e6e6e6;
+  --secondary_high: #e6e6e6;
+  --secondary_xhigh: #ffffff;
+
+  // Borders
+  --borders_low: #737373;
+  --borders_high: #adadad;
+  --borders_decorative: #474747;
+  --borders_contrast: #737373;
+
+  // Primary
+  --primary_default: #1db6c0;
+  --primary_hover: #2ec0cb;
+  --primary_pressed: #36d6d9;
+
+  // Neutral
+  --neutral_default: #ffffff;
+  --neutral_hover: #e6e6e6;
+  --neutral_pressed: #c6c6c6;
+
+  // Info
+  --info_bg: #363636;
+  --info_default: #6faffd;
+  --info_hover: #9dcdff;
+  --info_pressed: #c5e3ff;
+
+  // Danger
+  --danger_bg: #363636;
+  --danger_default: #f52929;
+  --danger_hover: #f95454;
+  --danger_pressed: #ff7a7a;
+
+  // Warning
+  --warning_bg: #363636;
+  --warning_default: #ffc919;
+  --warning_hover: #ffdf41;
+  --warning_pressed: #ffef86;
+  --warning_label: #262626;
+  --warning_border: #121212;
+
+  // Success
+  --success_bg: #363636;
+  --success_default: #15d36e;
+  --success_hover: #41e287;
+  --success_pressed: #92f7ba;
+
+  // Disabled
+  --disabled_bg: #474747;
+  --disabled_content: #737373;
+  --disabled_ghost: #5c5c5c;
+  --disabled_overlay: #00000099;
+}

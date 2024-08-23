@@ -1,0 +1,210 @@
+//font-family
+$font-family_hclRoobert: 'HCL Roobert';
+$font-family_inter: 'Inter';
+$font-family_robotoMono: 'Roboto Mono';
+
+// font weight
+$font-weight_semibold: 600;
+$font-weight_medium: 500;
+$font-weight_regular: 400;
+
+// font size
+$font-size_tiny: 0.625rem;
+$font-size_smaller: 0.75rem;
+$font-size_small: 0.875rem;
+$font-size_default: 1rem;
+$font-size_medium: 1.25rem;
+$font-size_large: 1.625rem;
+$font-size_xlarge: 2rem;
+
+// Line height
+$leading-tiny: 1rem;
+$leading-shorter: 1.125rem;
+$leading-short: 1.25rem;
+$leading-medium: 1.375rem;
+$leading-default: 1.5rem;
+$leading-large: 1.875rem;
+$leading-larger: 2.5rem;
+$leading-x-large: 3rem;
+
+@mixin typography($fontFamily, $fontWeight, $fontSize, $lineHeight) {
+  font-family: $fontFamily;
+  font-weight: $fontWeight;
+  font-size: $fontSize;
+  line-height: $lineHeight;
+}
+
+// --------------------typography util classes--------------------------------------------//
+.title_xl {
+  @include typography(
+    $font-family_hclRoobert,
+    $font-weight_regular,
+    $font-size_xlarge,
+    $leading-x-large
+  );
+}
+.title_l {
+  @include typography(
+    $font-family_hclRoobert,
+    $font-weight_medium,
+    $font-size_large,
+    $leading-larger
+  );
+}
+.title_m {
+  @include typography(
+    $font-family_inter,
+    $font-weight_medium,
+    $font-size_medium,
+    $leading-large
+  );
+}
+.title_s {
+  @include typography(
+    $font-family_inter,
+    $font-weight_medium,
+    $font-size_default,
+    $leading-default
+  );
+}
+
+.content_l {
+  @include typography(
+    $font-family_inter,
+    $font-weight_regular,
+    $font-size_default,
+    $leading-default
+  );
+}
+.content_m_xstrong {
+  @include typography(
+    $font-family_inter,
+    $font-weight_semibold,
+    $font-size_small,
+    $leading-short
+  );
+}
+.content_m_strong {
+  @include typography(
+    $font-family_inter,
+    $font-weight_medium,
+    $font-size_small,
+    $leading-short
+  );
+}
+.content_m_regular {
+  @include typography(
+    $font-family_inter,
+    $font-weight_regular,
+    $font-size_small,
+    $leading-short
+  );
+}
+.content_s_xstrong {
+  @include typography(
+    $font-family_inter,
+    $font-weight_semibold,
+    $font-size_smaller,
+    $leading-shorter
+  );
+}
+.content_s_strong {
+  @include typography(
+    $font-family_inter,
+    $font-weight_medium,
+    $font-size_smaller,
+    $leading-shorter
+  );
+}
+.content_s_regular {
+  @include typography(
+    $font-family_inter,
+    $font-weight_regular,
+    $font-size_smaller,
+    $leading-shorter
+  );
+}
+.content_tiny {
+  @include typography(
+    $font-family_inter,
+    $font-weight_regular,
+    $font-size_tiny,
+    $leading-tiny
+  );
+}
+.link_m_strong {
+  @include typography(
+    $font-family_inter,
+    $font-weight_medium,
+    $font-size_small,
+    $leading-default
+  );
+  text-decoration: underline;
+}
+.link_m_regular {
+  @include typography(
+    $font-family_inter,
+    $font-weight_regular,
+    $font-size_small,
+    $leading-short
+  );
+  text-decoration: underline;
+}
+.link_s_regular {
+  @include typography(
+    $font-family_inter,
+    $font-weight_regular,
+    $font-size_smaller,
+    $leading-shorter
+  );
+  text-decoration: underline;
+}
+.label_m {
+  @include typography(
+    $font-family_inter,
+    $font-weight_medium,
+    $font-size_default,
+    $leading-medium
+  );
+}
+.label_s {
+  @include typography(
+    $font-family_inter,
+    $font-weight_medium,
+    $font-size_small,
+    $leading-short
+  );
+}
+
+.logo_small {
+  @include typography(
+    $font-family_hclRoobert,
+    $font-weight_medium,
+    $font-size_small,
+    $leading-shorter
+  );
+}
+.monospace_l {
+  @include typography(
+    $font-family_robotoMono,
+    $font-weight_regular,
+    $font-size_default,
+    $leading-default
+  );
+}
+.monospace_m {
+  @include typography(
+    $font-family_robotoMono,
+    $font-weight_regular,
+    $font-size_small,
+    $leading-short
+  );
+}
+.monospace_s {
+  @include typography(
+    $font-family_robotoMono,
+    $font-weight_regular,
+    $font-size_smaller,
+    $leading-tiny
+  );
+}
